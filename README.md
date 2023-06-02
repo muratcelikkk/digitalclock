@@ -1,3 +1,4 @@
+![chrome-capture-2023-5-2](https://github.com/muratcelikkk/digitalclock/assets/113663079/74157d37-f915-426e-9073-a947bff546fc)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
