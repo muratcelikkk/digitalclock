@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import 'animate.css';
 
 function App() {
+  let time =new Date().toLocaleTimeString()
+
+  const [currentTime, setCurrentTime] = useState(time);
+  function Time(){
+    let time =new Date().toLocaleTimeString()
+    setCurrentTime(time)
+  }
+  setInterval(Time,1000)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+     <h1 class="animate__animated animate__heartBeat">{currentTime}</h1>
     </div>
   );
 }
